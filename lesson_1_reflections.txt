@@ -1,0 +1,40 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    The diff command shows only the lines that have been changed between two files. This saves time by removing any identical lines. We can pinpoint the exact location of where the changes were made to check for any errors.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Access to previous changes in a file will allow for navigation of what changes were made, at what time, and by whom. It will also allow for quick debugging, the ability to revert back to previous versions, as well as to see how something was created for future reference.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros: Allows for fine grained control over exactly what points to commit. To make each commit contain a single logical change. To make reviewing changes easier with only logical commits in the git log.
+    Cons: Have to actually manually commit, and choose when to commit. Can be prone to user error.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    VC like Git allows for tracking multiple files in one commit because it is no uncommon for coding projects to have interrelated files, where changes in one file directly impact other files within the same project. It is important to be able to tracking all of the files within a project together in order to see the effect of specific changes recorded in each commit.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Inside of a git repo, you can clone the repo to your local machine by using the command git clone (followed by the URL of the repo). Once the repo has been copied to your machine, you have full access to the files contained inside of the repo, as well as the entire history of changes. 
+    
+    In git bash, you can use the command git log to see a history of all of the changes made within that repo (commits). 
+    
+    If you want to see the specific changes between two commits, you can use the command git diff commitId1 commitId2.
+
+    To exit out of the git log, use the q key in order to 'quit'.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Using version controls allows for tracking of bugs using git log, git checkout (to identify which commit introduced the bug), and git diff, to see the exact changes that were made between commits. Through Git, we are able to make changes that may potentially break our app - but we can also track down what the underlying issues are, and resolve them.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    With a proper workspace setup for Git, I'd like to mimic a enterprise level version control workflow for all of my future projects - this will give me confidence in working on larger scale projects that I will most likely run into in the workplace.
