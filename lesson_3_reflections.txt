@@ -11,7 +11,11 @@ automatically stay up-to-date with your remote repository?
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    Forking a GitHub repo is taking an existing repo and creating a copy of that repo to your own Github account. Think of it as a copy of a repo that gives credit to the original author.
+
+    A clone is creating a copy of a repo that does not maintain any connection to the original repo (if cloning from another users Github account). If you have a repo on your personal account that you want to edit locally, you would use git clone to create a local copy of the repo. You can make your edits, create commits, and push the commits to the repo using git push origin master (or whatever branch you are currently working on). When cloning a repo to local, Git will automatically create a remote path.
+
+    A branch is contained within a project, and represents a set of changes/commits to a project that can be grouped into a single line of thought. For example, a new feature, bug fix, etc. The changes of a particular branch and be later merged into the production branch, and the production branch and can also be merged into the other branch, so that the branch will have the latest production codebase.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
