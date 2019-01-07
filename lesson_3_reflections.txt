@@ -20,7 +20,7 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    A copy of the last known state stored locally allows the user to see the latest production code, so that when working on their particular branch, they will have access to any additions/removals of code that may be relevant to their current work.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
