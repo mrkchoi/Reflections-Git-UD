@@ -10,13 +10,21 @@ The staging area is the middle ground, where files/directories can be added befo
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+When adding files to the staging area, one can check to make sure that the only files/directories that are being added to the staging area are relevant to the logical change. Items can be added via 'git add filename' or 'git add -A', and removed via 'git reset filename', or 'git reset'.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Branches are useful when working on new features of a project that are either experimental or introduce new features that may or may not make it to final production. This way, we can always keep our main master branch (tip) in a production ready state. Once the new feature of a alternate branch has been completed and is approved for production, the exp branch can be merged with the master branch.
+
 How do the diagrams help you visualize the branch structure?
+
+The diagrams allow visual representation of git commit/tree/head/tip/detached head/branch concepts. We get the detached head warning of we create a new commit off of a git checkout. After making changes, if we checkout an existing branch, then we will have essentially lost our work on detached head. The way to resolve this issue is to use the command git checkout -b new-branch-name. This shorthand combines two regularly run commands git checkout and git branch new-branch-name. In this way, we can ensure that any new changes that we commit to our checkout will be accessible in the future because we can always call the changes (tip of the branch/checkout head) via the branch name.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+
+Merging two branches together is the act of combining the commits from one branch to the commits of another branch. Once project features/bug fixes/other changes are completed (which may be worked on by other team members), we can merge the updated code either to another branch, or to the master branch. Then, we can do some cleanup by deleting the merged branch label. The exisiting commits will still be saved, and we will still be able to access them after the merge.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
