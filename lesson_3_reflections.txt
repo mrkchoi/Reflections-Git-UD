@@ -30,4 +30,4 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    Changes should be made in a separate branch when collaborating with other developers. Once a feature set is thought to be complete, a pull request can be submitted. Other team members can see the request, review the changes, comment/resolve any merge issues, and make sure that everything is being kept track of every step of the way. There are a few more steps required in order to make this work but its a systematic way to ensure clear and thorough documentation.
