@@ -1,7 +1,7 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+    A remote repo (such as one hosted on a service like Github) is useful for keep store of your projects online, so that you can access the project files on a different machine, anywhere in the world. It is also useful to use a remote repo when collaborating so team members have a central place to push and pull changes to a project.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
